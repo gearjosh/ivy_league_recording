@@ -1,4 +1,4 @@
-# vanilla_js_template
-## a vanilla js website template
+# Ivy League Recording
 
-A basic website template including jQuery and jQueryUI
+A website for Ivy League Recording.
+
