@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'kelvinchbold_italic';
+    src: url('Kelvinch-BoldItalic-webfont.eot');
+    src: url('Kelvinch-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Kelvinch-BoldItalic-webfont.woff2') format('woff2'),
+         url('Kelvinch-BoldItalic-webfont.woff') format('woff'),
+         url('Kelvinch-BoldItalic-webfont.ttf') format('truetype'),
+         url('Kelvinch-BoldItalic-webfont.svg#kelvinchbold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
