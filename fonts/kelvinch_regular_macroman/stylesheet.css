@@ -1,11 +1,7 @@
 @font-face {
     font-family: 'kelvinchregular';
     src: url('Kelvinch-Roman-webfont.eot');
-    src: url('Kelvinch-Roman-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Kelvinch-Roman-webfont.woff2') format('woff2'),
-         url('Kelvinch-Roman-webfont.woff') format('woff'),
-         url('Kelvinch-Roman-webfont.ttf') format('truetype'),
-         url('Kelvinch-Roman-webfont.svg#kelvinchregular') format('svg');
+    src: url('Kelvinch-Roman-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
