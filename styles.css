@@ -25,3 +25,17 @@
 .circle {
   border-radius: 50%;
 }
+
+.testslide {
+  animation: fade 600ms ease-in both;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
