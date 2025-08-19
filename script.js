@@ -31,6 +31,18 @@ function showTestimonials(n) {
   timeoutID = setTimeout(showTestimonials, 20000);
 }
 
+// show header text on scroll
+const hideText = $("#logo-text")
+$(window).scroll(function () {
+  const windowPos = $(window).scrollTop();
+  if (windowPos >= (150)) {
+    hideText.removeClass("hidden");
+  }
+  else {
+    hideText.addClass("hidden");
+  }
+});
+
 let testimonialIndex = 0;
 let timeoutID;
 showTestimonials();
