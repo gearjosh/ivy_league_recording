@@ -22,7 +22,7 @@
       <section class="text-white bg-black h-20 w-full flex flex-row justify-between items-end pr-4 pl-3 pb-4 sticky top-0" id="header">
         <div class="flex flex-row justify-start">
           <a href="index.html" class="mt-4"><img class="h-13" src="img/logoinverse.png" alt="Ivy League Recording logo"></a>
-          <p class="font-kel-bold uppercase ml-4 mt-4 text-white text-3xl self-end">Ivy League <span class="font-kel-regular text-2xl">Recording</span></p>
+          <p class="font-kel-bold uppercase ml-4 mt-4 text-white text-3xl self-end sm:hidden md:inline">Ivy League <span class="font-kel-regular text-2xl">Recording</span></p>
         </div>
         <div class="flex flex-row font-kel-regular uppercase text-lg">
           <a class="ml-16 hover:text-pink-500" href="work.html">Work</a>
@@ -39,22 +39,51 @@
   
         <!-- work -->
         <section id="work">
-          <!-- testimonials -->
-          Matthew is awesome to work with and always goes above and beyond. Will continue to use his services and can't recommend
-          him highly enough.
+
+          <div class="flex flex-row justify-center items-center h-auto bg-green-800">
+            <div class="flex sm:flex-col md:flex-row justify-between items-center w-4/5 testslide mt-4">
+              <img loading="lazy" class="circle h-70 w-70 object-cover sm:mb-4 md:mb-0" src="img/daniel-schludi-mbGxz7pt0jM-unsplash.jpg" alt="a happy Next Round Trivia customer">
+              <div class="flex flex-col justify-center w-3/5 font-kel-regular text-xl testimonial ml-4">
+                <p>
+                Matthew is awesome to work with and always goes above and beyond. Will continue to use his services and can't recommend
+                him highly enough.
+                </p>
+                <p class="font-kel-bold text-right mt-2 uppercase text-2xl">- Sherman Tabor</p>
+              </div>
+            </div>
           
-          Sherman Tabor
+            <div class="flex sm:flex-col md:flex-row justify-between items-center w-4/5 testslide mt-4 hidden">
+              <img loading="lazy" class="circle h-70 w-70 object-cover sm:mb-4 md:mb-0" src="img/daniel-schludi-mbGxz7pt0jM-unsplash.jpg" alt="a happy Next Round Trivia patron">
+              <div class="flex flex-col justify-center w-3/5 font-kel-regular text-xl testimonial ml-4">
+                <p>
+                  Matthew has been <span class="uppercase">incredible</span>! He has proven himself to be VERY knowledgeable and a true professional. I will <span class="uppercase">definitely</span>
+                  work with him in the future and cannot recommend him enough. <span class="uppercase">do not hesitate</span> in contracting Matthew for your projects,
+                  he will do an amazing job while demonstrating amazing kindness. One happy customer!
+                </p>
+                <p class="font-kel-bold text-right mt-2 uppercase text-2xl">- The Wellborns</p>
+              </div>
+            </div>
           
-          Matthew has been INCREDIBLE! He has proven himself to be VERY knowledgeable and a true professional. I will DEFINITELY
-          work with him in the future and cannot recommend him enough. DO NOT HESITATE in contracting Matthew for your projects,
-          he will do an amazing job while demonstrating amazing kindness. One happy customer!
-          
-          The Wellborns
-          
-          He's the best. Puts a lot of attention to details and gives many advices to get the best results. Will use his services
-          again, definitely.
-          
-          Gil Camerra
+            <div class="flex sm:flex-col md:flex-row justify-between items-center w-4/5 testslide mt-4 hidden">
+              <img loading="lazy" class="circle h-70 w-70 object-cover sm:mb-4 md:mb-0" src="img/daniel-schludi-mbGxz7pt0jM-unsplash.jpg" alt="a happy Next Round Trivia patron">
+              <div class="flex flex-col justify-center w-3/5 font-kel-regular text-xl testimonial ml-4">
+                <p>
+                  He's the best. Puts a lot of attention to details and gives many advices to get the best results. Will use his services
+                  again, definitely.
+                </p>
+                <p class="font-kel-bold text-right mt-2 uppercase text-2xl">- Gil Camerra</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-green-800 mb-4">
+            <div class="text-center">
+              <span class="dot cursor-pointer circle bg-[#aaaaaa]" onclick="currentTestimonial(1)"></span>
+              <span class="dot cursor-pointer circle bg-[#aaaaaa]" onclick="currentTestimonial(2)"></span>
+              <span class="dot cursor-pointer circle bg-[#aaaaaa]" onclick="currentTestimonial(3)"></span>
+              <span class="dot cursor-pointer circle bg-[#aaaaaa]" onclick="currentTestimonial(4)"></span>
+            </div>
+          </div>
 
           <!-- worked with -->
           Kassi Valazza

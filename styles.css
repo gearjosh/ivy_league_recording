@@ -1,12 +1,27 @@
 .font-kel-bold {
   font-family: 'kelvinchbold', serif;
 }
+
 .font-kel-italic {
   font-family: 'kelvinchitalic', serif;
 }
+
 .font-kel-regular {
   font-family: 'kelvinchregular', serif;
 }
+
 .font-kel-bold-italic {
   font-family: 'kelvinchbold-italic', serif;
+}
+
+.dot {
+  width: 1rem;
+  height: 1rem;
+  margin: .5rem .125rem;
+  display: inline-block;
+  transition: background-color 400ms ease;
+}
+
+.circle {
+  border-radius: 50%;
 }
