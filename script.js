@@ -44,6 +44,12 @@ $(window).scroll(function () {
   }
 });
 
+// click listeners
+$("#contactButton").click(function () {
+  window.location.href = "contact.html";
+});
+
+// initialize the first testimonial
 let testimonialIndex = 0;
 let timeoutID;
 showTestimonials();

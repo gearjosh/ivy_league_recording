@@ -42,16 +42,33 @@
         </div>
   
         <!-- contact -->
-        <section id="contact">
-          Contact For Studio Tour
-  
-          Engineering Rate $350 a day
-          
-          Mix Rate $250-350 a song
-          
-          Mastering $65 a song
-          
-          Album rates available
+        <section id="contact" >
+          <h2 class="text-5xl font-kel-bold uppercase text-center text-[#F6E48C] mb-4">Rates</h2>
+          <div class="flex flex-col items-center bg-orange-800 p-4 mb-4 rounded-xs">         
+            <ul class="mb-4">
+              <li>Engineering Rate: $350 a day</li>
+              <li>Mix Rate: $250-350 a song</li>
+              <li>Mastering: $65 a song</li>
+              <li>Album rates available</li>
+            </ul>
+            <img src="img/serious_matt.jpg" alt="Matthew looking serious" class="md:max-w-2/3 rounded-xs">
+          </div>
+          <h2 class="text-5xl font-kel-bold uppercase text-center text-[#F6E48C] mb-4">Contact For Studio Tour</h2>
+          <form class="flex flex-col items-center bg-green-800 p-4 mb-4 rounded-xs" action="">
+            <label for="name" class="mb-2">Name:</label>
+            <input type="text" id="name" name="name" class="w-4/5 bg-[#F6E48C] text-black p-2 mb-4 rounded-xs" required>
+
+            <label for="email" class="mb-2">Email:</label>
+            <input type="email" id="email" name="email" class="w-4/5 bg-[#F6E48C] text-black p-2 mb-4 rounded-xs" required>
+
+            <label for="subject" class="mb-2">Subject:</label>
+            <input type="text" id="subject" name="subject" class="w-4/5 bg-[#F6E48C] text-black p-2 mb-4 rounded-xs" required>
+
+            <label for="message" class="mb-2">Message:</label>
+            <textarea id="message" name="message" rows="4" class="w-4/5 bg-[#F6E48C] text-black p-2 mb-4 rounded-xs" required></textarea>
+
+            <button type="submit" class="bg-pink-800 text-white p-2 rounded-xs lg:mb-4 uppercase">Send Message</button>
+          </form>
         </section>
       </div>
     </div>
