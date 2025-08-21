@@ -11,6 +11,7 @@
     <link href="fonts/kelvinch_bold_macroman/stylesheet.css" rel="stylesheet" type="text/css" media="all">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="fonts/kelvinch_bolditalic_macroman/stylesheet.css" rel="stylesheet" type="text/css" media="all">
+    <link href="fonts/precious/stylesheet.css" rel="stylesheet" type="text/css" media="all">
     <link href="styles.css" rel="stylesheet" type="text/css" media="all">
     <title></title>
   </head>
@@ -26,7 +27,8 @@
           <a href="index.html" class="mt-4"><img class="h-13" src="img/logoinverse.png" alt="Ivy League Recording logo"></a>
           <p id="logo-text"
             class="font-kel-bold uppercase ml-4 mt-4 text-white text-xl sm:text-2xl md:text-3xl self-end hidden">
-            Ivy League <span class="font-kel-regular text-base sm:text-lg md:text-2xl">Recording</span>
+            <a href="index.html">Ivy League <span
+                class="font-kel-regular text-base sm:text-lg md:text-2xl">Recording</span></a>
           </p>
         </div>
         <div class="flex flex-row font-kel-regular uppercase md:text-lg">
@@ -43,32 +45,47 @@
   
         <!-- contact -->
         <section id="contact" >
-          <h2 class="text-5xl font-kel-bold uppercase text-center text-[#F6E48C] mb-4">Rates</h2>
-          <div class="flex flex-col items-center bg-orange-800 p-4 mb-4 rounded-xs">         
-            <ul class="mb-4">
-              <li>Engineering Rate: $350 a day</li>
-              <li>Mix Rate: $250-350 a song</li>
-              <li>Mastering: $65 a song</li>
-              <li>Album rates available</li>
-            </ul>
-            <img src="img/serious_matt.jpg" alt="Matthew looking serious" class="md:max-w-2/3 rounded-xs">
+          <h2 class="text-5xl font-kel-bold uppercase text-center text-[#F6E48C] mb-4">Competitive Rates</h2>
+          <div class="flex flex-col lg:flex-row items-center lg:justify-between bg-orange-800 mb-4 rounded-t-xs lg:rounded-xs p-4 lg:p-0">
+            <div class="flex flex-col items-center justify-between mb-4 lg:w-1/3 lg:mb-0 p-4">
+              <ul class="mb-4 text-center">
+                <li class="mb-4 text-xl font-kel-italic">Contact for studio tour</li>
+                <li class="mb-4"><span class="font-kel-bold uppercase text-[#F6E48C]">Engineering</span> <br/> <span class="text-right">$350 a day</span></li>
+                <li class="mb-4"><span class="font-kel-bold uppercase text-[#F6E48C]">Mixing</span> <br/> <span class="text-right">$250-350 a song</span></li>
+                <li class="mb-4"><span class="font-kel-bold uppercase text-[#F6E48C]">Mastering</span> <br/> <span class="text-right">$65 a song</span></li>
+                <li class="text-xl font-kel-italic">Album rates available</li>
+              </ul>
+              <div class="flex flex-row justify-between">
+                <a href="https://www.facebook.com/ivyleaguerecording" target="_blank"><img src="img/facebook_white_28dp.png" alt="Facebook Profile"></a>
+                <a href="https://www.instagram.com/ivyleaguerecording" target="_blank"><img src="img/instagram_white_28dp.png" alt="Instagram Profile"></a>
+                <a href="https://x.com/MattThomson_ILR" target="_blank"><img src="img/twitter_white_28dp.png" alt="Twitter Profile"></a>
+              </div>
+            </div>
+            <img src="img/matt_on_stage.jpg" alt="Matthew playing bass for Maita" class="md:max-w-4/5 lg:max-w-2/3 rounded-xs lg:rounded-l-none">
           </div>
-          <h2 class="text-5xl font-kel-bold uppercase text-center text-[#F6E48C] mb-4">Contact For Studio Tour</h2>
-          <form class="flex flex-col items-center bg-green-800 p-4 mb-4 rounded-xs" action="">
-            <label for="name" class="mb-2">Name:</label>
-            <input type="text" id="name" name="name" class="w-4/5 bg-[#F6E48C] text-black p-2 mb-4 rounded-xs" required>
+          <h2 class="text-5xl font-kel-bold uppercase text-center text-[#F6E48C] mb-4">Contact Ivy League Recording</h2>
+          <div class="flex flex-col items-center">
+            <form class="flex flex-col items-center w-full bg-green-800 p-4 mb-4 rounded-xs" action="https://formsubmit.io/send/IvyLeagueRecording@gmail.com">
+              <!-- build a redirect page -->
+              <!-- <input name="_redirect" type="hidden" value="https://your website url"> -->
 
-            <label for="email" class="mb-2">Email:</label>
-            <input type="email" id="email" name="email" class="w-4/5 bg-[#F6E48C] text-black p-2 mb-4 rounded-xs" required>
+              <label for="name" class="mb-2">Name:</label>
+              <input type="text" id="name" name="name" class="w-4/5 bg-[#F6E48C] text-black p-2 mb-4 rounded-xs" required>
+  
+              <label for="email" class="mb-2">Email Address:</label>
+              <input type="email" id="email" name="email" class="w-4/5 bg-[#F6E48C] text-black p-2 mb-4 rounded-xs" required>
+  
+              <label for="subject" class="mb-2">Subject:</label>
+              <input type="text" id="subject" name="subject" class="w-4/5 bg-[#F6E48C] text-black p-2 mb-4 rounded-xs" required>
+  
+              <label for="message" class="mb-2">Message:</label>
+              <textarea id="message" name="message" rows="4" class="w-4/5 bg-[#F6E48C] text-black p-2 mb-4 rounded-xs" required></textarea>
+  
+              <input name="_formsubmit_id" type="text" style="display:none">
 
-            <label for="subject" class="mb-2">Subject:</label>
-            <input type="text" id="subject" name="subject" class="w-4/5 bg-[#F6E48C] text-black p-2 mb-4 rounded-xs" required>
-
-            <label for="message" class="mb-2">Message:</label>
-            <textarea id="message" name="message" rows="4" class="w-4/5 bg-[#F6E48C] text-black p-2 mb-4 rounded-xs" required></textarea>
-
-            <button type="submit" class="bg-pink-800 text-white p-2 rounded-xs lg:mb-4 uppercase">Send Message</button>
-          </form>
+              <button type="submit" class="cursor-pointer bg-yellow-800 text-white p-4 rounded-xs lg:mb-4 uppercase">Send Message</button>
+            </form>
+          </div>
         </section>
       </div>
     </div>
