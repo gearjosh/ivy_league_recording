@@ -1,97 +1,111 @@
 <!DOCTYPE html>
 <html lang="en" class="bg-[#D0822E] font-kel-regular">
-  
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="img/favicon.ico" rel="shortcut icon" type="img/jpeg">
-    <!-- <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.10/themes/redmond/jquery-ui.css" /> -->
-    <link href="fonts/kelvinch_regular_macroman/stylesheet.css" rel="stylesheet" type="text/css" media="all">
-    <link href="fonts/kelvinch_italic_macroman/stylesheet.css" rel="stylesheet" type="text/css" media="all">
-    <link href="fonts/kelvinch_bold_macroman/stylesheet.css" rel="stylesheet" type="text/css" media="all">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link href="fonts/kelvinch_bolditalic_macroman/stylesheet.css" rel="stylesheet" type="text/css" media="all">
-    <link href="fonts/precious/stylesheet.css" rel="stylesheet" type="text/css" media="all">
-    <link href="styles.css" rel="stylesheet" type="text/css" media="all">
-    <title></title>
-  </head>
-  
-  <body class="flex flex-row justify-center">
 
-    <div class="container bg-black h-full">
-      <!-- header -->
-      <section
-        class="text-white bg-black h-20 w-full flex flex-row justify-between items-end pr-4 pl-3 pb-4 sticky top-0 z-10"
-        id="header">
-        <div class="flex flex-row justify-start">
-          <a href="index.html" class="mt-4"><img class="h-13" src="img/logoinverse.png" alt="Ivy League Recording logo"></a>
-          <p id="logo-text"
-            class="font-kel-bold uppercase ml-4 mt-4 text-white text-xl sm:text-2xl md:text-3xl self-end hidden">
-            <a href="index.html">Ivy League <span
-                class="font-kel-regular text-base sm:text-lg md:text-2xl">Recording</span></a>
-          </p>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="img/favicon.ico" rel="shortcut icon" type="img/jpeg">
+  <!-- <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.10/themes/redmond/jquery-ui.css" /> -->
+  <link href="fonts/kelvinch_regular_macroman/stylesheet.css" rel="stylesheet" type="text/css" media="all">
+  <link href="fonts/kelvinch_italic_macroman/stylesheet.css" rel="stylesheet" type="text/css" media="all">
+  <link href="fonts/kelvinch_bold_macroman/stylesheet.css" rel="stylesheet" type="text/css" media="all">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="fonts/kelvinch_bolditalic_macroman/stylesheet.css" rel="stylesheet" type="text/css" media="all">
+  <link href="fonts/precious/stylesheet.css" rel="stylesheet" type="text/css" media="all">
+  <link href="styles.css" rel="stylesheet" type="text/css" media="all">
+  <title></title>
+</head>
+
+<body class="flex flex-row justify-center">
+
+  <div class="container bg-black h-full">
+    <!-- header -->
+    <section
+      class="text-white bg-black h-20 w-full flex flex-row justify-between items-end pr-4 pl-3 pb-4 sticky top-0 z-10"
+      id="header">
+      <div class="flex flex-row justify-start">
+        <a href="index.html" class="mt-4"><img class="h-13" src="img/logoinverse.png"
+            alt="Ivy League Recording logo"></a>
+        <p id="logo-text"
+          class="font-kel-bold uppercase ml-4 mt-4 text-white text-xl sm:text-2xl md:text-3xl self-end hidden">
+          <a href="index.html">Ivy League <span
+              class="font-kel-regular text-base sm:text-lg md:text-2xl">Recording</span></a>
+        </p>
+      </div>
+      <div class="flex flex-row font-kel-regular uppercase md:text-lg">
+        <a class="ml-8 hover:text-pink-500" href="work.html">Work</a>
+        <a class="ml-8 hover:text-pink-500" href="contact.html">Contact</a>
+      </div>
+    </section>
+
+    <!-- not the header -->
+    <div class="flex flex-col justify-center h-auto text-[#aaaaaa] pr-4 pl-4">
+      <div id="bigLogo" class="text-center mb-4 bg-white rounded-xs">
+        <img src="img/IVYLEAfinalexportsGREENHORIZ.png" alt="Ivy League Recording logo" class="width-full mx-auto">
+      </div>
+
+      <!-- contact -->
+      <section id="contact">
+        <h2 class="text-5xl font-kel-bold uppercase text-center text-[#F6E48C] mb-4">Competitive Rates</h2>
+        <div
+          class="flex flex-col lg:flex-row items-center lg:justify-between bg-orange-800 mb-4 rounded-t-xs lg:rounded-xs p-4 lg:p-0">
+          <div class="flex flex-col items-center justify-between mb-4 lg:w-1/3 lg:mb-0 p-4">
+            <ul class="mb-4 text-center">
+              <li class="mb-4 text-xl font-kel-italic">Contact for studio tour</li>
+              <li class="mb-4"><span class="font-kel-bold uppercase text-[#F6E48C]">Engineering</span> <br /> <span
+                  class="text-right">$350 a day</span></li>
+              <li class="mb-4"><span class="font-kel-bold uppercase text-[#F6E48C]">Mixing</span> <br /> <span
+                  class="text-right">$250-350 a song</span></li>
+              <li class="mb-4"><span class="font-kel-bold uppercase text-[#F6E48C]">Mastering</span> <br /> <span
+                  class="text-right">$65 a song</span></li>
+              <li class="text-xl font-kel-italic">Album rates available</li>
+            </ul>
+            <div class="flex flex-row justify-between">
+              <a href="https://www.facebook.com/ivyleaguerecording" target="_blank"><img
+                  src="img/facebook_white_28dp.png" alt="Facebook Profile"></a>
+              <a href="https://www.instagram.com/ivyleaguerecording" target="_blank"><img
+                  src="img/instagram_white_28dp.png" alt="Instagram Profile"></a>
+              <a href="https://x.com/MattThomson_ILR" target="_blank"><img src="img/twitter_white_28dp.png"
+                  alt="Twitter Profile"></a>
+            </div>
+          </div>
+          <img src="img/matt_on_stage.jpg" alt="Matthew playing bass for Maita"
+            class="md:max-w-4/5 lg:max-w-2/3 rounded-xs lg:rounded-l-none">
         </div>
-        <div class="flex flex-row font-kel-regular uppercase md:text-lg">
-          <a class="ml-8 hover:text-pink-500" href="work.html">Work</a>
-          <a class="ml-8 hover:text-pink-500" href="contact.html">Contact</a>
+        <h2 class="text-5xl font-kel-bold uppercase text-center text-[#F6E48C] mb-4">Contact Ivy League Recording</h2>
+        <div class="flex flex-col items-center">
+          <form class="flex flex-col items-center w-full bg-green-800 p-4 mb-4 rounded-xs"
+            action="https://formsubmit.io/send/IvyLeagueRecording@gmail.com">
+            <!-- build a redirect page -->
+            <!-- <input name="_redirect" type="hidden" value="https://your website url"> -->
+
+            <label for="name" class="mb-2">Name:</label>
+            <input type="text" id="name" name="name" class="w-4/5 bg-[#F6E48C] text-black p-2 mb-4 rounded-xs" required>
+
+            <label for="email" class="mb-2">Email Address:</label>
+            <input type="email" id="email" name="email" class="w-4/5 bg-[#F6E48C] text-black p-2 mb-4 rounded-xs"
+              required>
+
+            <label for="subject" class="mb-2">Subject:</label>
+            <input type="text" id="subject" name="subject" class="w-4/5 bg-[#F6E48C] text-black p-2 mb-4 rounded-xs"
+              required>
+
+            <label for="message" class="mb-2">Message:</label>
+            <textarea id="message" name="message" rows="4" class="w-4/5 bg-[#F6E48C] text-black p-2 mb-4 rounded-xs"
+              required></textarea>
+
+            <input name="_formsubmit_id" type="text" style="display:none">
+
+            <button type="submit" class="cursor-pointer bg-yellow-800 text-white p-4 rounded-xs lg:mb-4 uppercase">Send
+              Message</button>
+          </form>
         </div>
       </section>
-
-      <!-- not the header -->
-      <div class="flex flex-col justify-center h-auto text-[#aaaaaa] pr-4 pl-4">
-        <div id="bigLogo" class="text-center mb-4 bg-white rounded-xs">
-          <img src="img/IVYLEAfinalexportsGREENHORIZ.png" alt="Ivy League Recording logo" class="width-full mx-auto">
-        </div>
-  
-        <!-- contact -->
-        <section id="contact" >
-          <h2 class="text-5xl font-kel-bold uppercase text-center text-[#F6E48C] mb-4">Competitive Rates</h2>
-          <div class="flex flex-col lg:flex-row items-center lg:justify-between bg-orange-800 mb-4 rounded-t-xs lg:rounded-xs p-4 lg:p-0">
-            <div class="flex flex-col items-center justify-between mb-4 lg:w-1/3 lg:mb-0 p-4">
-              <ul class="mb-4 text-center">
-                <li class="mb-4 text-xl font-kel-italic">Contact for studio tour</li>
-                <li class="mb-4"><span class="font-kel-bold uppercase text-[#F6E48C]">Engineering</span> <br/> <span class="text-right">$350 a day</span></li>
-                <li class="mb-4"><span class="font-kel-bold uppercase text-[#F6E48C]">Mixing</span> <br/> <span class="text-right">$250-350 a song</span></li>
-                <li class="mb-4"><span class="font-kel-bold uppercase text-[#F6E48C]">Mastering</span> <br/> <span class="text-right">$65 a song</span></li>
-                <li class="text-xl font-kel-italic">Album rates available</li>
-              </ul>
-              <div class="flex flex-row justify-between">
-                <a href="https://www.facebook.com/ivyleaguerecording" target="_blank"><img src="img/facebook_white_28dp.png" alt="Facebook Profile"></a>
-                <a href="https://www.instagram.com/ivyleaguerecording" target="_blank"><img src="img/instagram_white_28dp.png" alt="Instagram Profile"></a>
-                <a href="https://x.com/MattThomson_ILR" target="_blank"><img src="img/twitter_white_28dp.png" alt="Twitter Profile"></a>
-              </div>
-            </div>
-            <img src="img/matt_on_stage.jpg" alt="Matthew playing bass for Maita" class="md:max-w-4/5 lg:max-w-2/3 rounded-xs lg:rounded-l-none">
-          </div>
-          <h2 class="text-5xl font-kel-bold uppercase text-center text-[#F6E48C] mb-4">Contact Ivy League Recording</h2>
-          <div class="flex flex-col items-center">
-            <form class="flex flex-col items-center w-full bg-green-800 p-4 mb-4 rounded-xs" action="https://formsubmit.io/send/IvyLeagueRecording@gmail.com">
-              <!-- build a redirect page -->
-              <!-- <input name="_redirect" type="hidden" value="https://your website url"> -->
-
-              <label for="name" class="mb-2">Name:</label>
-              <input type="text" id="name" name="name" class="w-4/5 bg-[#F6E48C] text-black p-2 mb-4 rounded-xs" required>
-  
-              <label for="email" class="mb-2">Email Address:</label>
-              <input type="email" id="email" name="email" class="w-4/5 bg-[#F6E48C] text-black p-2 mb-4 rounded-xs" required>
-  
-              <label for="subject" class="mb-2">Subject:</label>
-              <input type="text" id="subject" name="subject" class="w-4/5 bg-[#F6E48C] text-black p-2 mb-4 rounded-xs" required>
-  
-              <label for="message" class="mb-2">Message:</label>
-              <textarea id="message" name="message" rows="4" class="w-4/5 bg-[#F6E48C] text-black p-2 mb-4 rounded-xs" required></textarea>
-  
-              <input name="_formsubmit_id" type="text" style="display:none">
-
-              <button type="submit" class="cursor-pointer bg-yellow-800 text-white p-4 rounded-xs lg:mb-4 uppercase">Send Message</button>
-            </form>
-          </div>
-        </section>
-      </div>
     </div>
+  </div>
 
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script type="text/javascript" src="script.js"></script>
-  </body>
-  
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
 </html>
