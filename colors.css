@@ -1,3 +1,6 @@
+.bg-color-white {
+  background-color: #D9C7A5;
+}
 .bg-color-brown {
   background-color: #A68D5A;
 }
@@ -8,7 +11,7 @@
   background-color: #7CA65A;
 }
 .bg-color-indigo {
-  background-color: #4B32CE;
+  background-color: #5343A4;
 }
 .bg-color-blue {
   background-color: #5A76A6;
@@ -22,10 +25,10 @@
 .bg-color-black {
   background-color: #332F27;
 }
-.bg-color-white {
-  background-color: #D9C7A5;
-}
 
+.text-color-white {
+  color: #D9C7A5;
+}
 .text-color-brown {
   color: #A68D5A;
 }
@@ -36,7 +39,7 @@
   color: #7CA65A;
 }
 .text-color-indigo {
-  color: #4B32CE;
+  color: #5343A4;
 }
 .text-color-blue {
   color: #5A76A6;
@@ -49,7 +52,4 @@
 }
 .text-color-black {
   color: #332F27;
-}
-.text-color-white {
-  color: #D9C7A5;
 }

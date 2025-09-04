@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="bg-[#D0822E] font-kel-regular">
+<html lang="en" class="bg-color-gray text-color-black font-kel-regular">
 
 <head>
   <meta charset="utf-8">
@@ -19,7 +19,7 @@
 
 <body class="flex flex-row justify-center">
 
-  <div class="container bg-black h-full">
+  <div class="container bg-color-black h-full">
     <!-- header -->
     <section
       class="text-color-white bg-color-black h-20 w-full flex flex-row justify-between items-end pr-4 pl-3 pb-4 sticky top-0 z-10"
@@ -27,11 +27,13 @@
       <div class="flex flex-row justify-start">
         <a href="index.html" class="mt-4"><img class="h-13" src="img/logo_white_no_bg.png"
             alt="Ivy League Recording logo"></a>
-        <p id="logo-text"
-          class="font-kel-bold uppercase ml-4 mt-4 text-color-white text-xl sm:text-2xl md:text-3xl self-end hidden">
-          <a href="index.html">Ivy League <span
-              class="font-kel-regular text-base sm:text-lg md:text-2xl">Recording</span></a>
-        </p>
+        <div class="hidden sm:block self-end">
+          <p id="logo-text"
+            class="font-kel-bold uppercase ml-4 mt-4 text-color-white text-xl sm:text-2xl md:text-3xl hidden">
+            <a href="index.html">Ivy League <span
+                class="font-kel-regular text-base sm:text-lg md:text-2xl">Recording</span></a>
+          </p>
+        </div>
       </div>
       <div class="flex flex-row font-kel-regular uppercase md:text-lg">
         <a class="ml-8 hover:text-color-black" href="work.html">Work</a>
@@ -40,7 +42,7 @@
     </section>
 
     <!-- not the header -->
-    <div class="flex flex-col justify-center h-auto text-[#aaaaaa] pr-4 pl-4">
+    <div class="flex flex-col justify-center h-auto text-color-white pr-4 pl-4">
       <!-- main content -->
       <div id="bigLogo" class="text-center mb-4 bg-white rounded-xs">
         <img src="img/IVYLEAfinalexportsGREENHORIZ.png" alt="Ivy League Recording logo" class="width-full mx-auto">
@@ -48,9 +50,9 @@
 
       <!-- work -->
       <section>
-        <div class="flex flex-row justify-center items-center h-auto bg-green-800 rounded-xs">
-          <div class="flex-col md:flex-row justify-between items-center w-4/5 h-110 md:h-auto testslide mt-4 hidden">
-            <img class="circle h-70 w-70 object-cover sm:mb-4 md:mb-0" src="img/tabor.webp"
+        <div class="flex flex-row justify-center items-center h-auto bg-color-blue rounded-t-xs">
+          <div class="flex-col md:flex-row justify-between items-center w-4/5 h-140 min-[400px]:h-120 md:h-auto testslide mt-4 hidden">
+            <img class="size-70 rounded-full object-cover sm:mb-4 md:mb-0" src="img/tabor.webp"
               alt="Sherman Tabor">
             <div class="flex flex-col justify-center md:w-3/5 font-kel-regular text-xl testimonial ml-4">
               <p>
@@ -58,12 +60,12 @@
                 can't recommend
                 him highly enough.
               </p>
-              <p class="font-precious text-right mt-2 text-2xl">- Sherman Tabor</p>
+              <p class="font-precious text-color-black text-right mt-2 text-2xl">- Sherman Tabor</p>
             </div>
           </div>
 
-          <div class="flex-col md:flex-row justify-between items-center w-4/5 h-110 md:h-auto testslide mt-4 hidden">
-            <img class="circle h-70 w-70 object-cover sm:mb-4 md:mb-0" src="img/wellborn.jpeg"
+          <div class="flex-col md:flex-row justify-between items-center w-4/5 h-140 min-[400px]:h-120 md:h-auto testslide mt-4 p-1 hidden">
+            <img class="size-70 rounded-full object-cover sm:mb-4 md:mb-0" src="img/wellborn.jpeg"
               alt="The Wellborns">
             <div class="flex flex-col justify-center md:w-3/5 font-kel-regular text-xl testimonial ml-4">
               <p class="text-xs sm:text-sm md:text-base lg:text-lg">
@@ -74,12 +76,12 @@
                   hesitate</span> in contracting Matthew for your projects,
                 he will do an amazing job while demonstrating amazing kindness. One happy customer!
               </p>
-              <p class="font-precious text-right mt-2 text-2xl">- The Wellborns</p>
+              <p class="font-precious text-color-black text-right mt-2 text-2xl">- The Wellborns</p>
             </div>
           </div>
 
-          <div class="flex-col md:flex-row justify-between items-center w-4/5 h-110 md:h-auto testslide mt-4 hidden">
-            <img class="circle h-70 w-70 object-cover sm:mb-4 md:mb-0" src="img/gil.jpg"
+          <div class="flex-col md:flex-row justify-between items-center w-4/5 h-140 min-[400px]:h-120 md:h-auto testslide mt-4 hidden">
+            <img class="size-70 rounded-full object-cover sm:mb-4 md:mb-0" src="img/gil.jpg"
               alt="Gil Camerra">
             <div class="flex flex-col justify-center md:w-3/5 font-kel-regular text-xl testimonial ml-4">
               <p>
@@ -87,78 +89,90 @@
                 use his services
                 again, definitely.
               </p>
-              <p class="font-precious text-right mt-2 text-2xl">- Gil Camara</p>
+              <p class="font-precious text-color-black text-right mt-2 text-2xl">- Gil Camara</p>
             </div>
           </div>
         </div>
 
-        <div class="bg-green-800 mb-4">
+        <div class="bg-color-blue mb-4">
           <div class="text-center">
-            <span class="dot cursor-pointer circle bg-[#aaaaaa]" onclick="currentTestimonial(1)"></span>
-            <span class="dot cursor-pointer circle bg-[#aaaaaa]" onclick="currentTestimonial(2)"></span>
-            <span class="dot cursor-pointer circle bg-[#aaaaaa]" onclick="currentTestimonial(3)"></span>
+            <span class="dot cursor-pointer circle bg-color-white" onclick="currentTestimonial(1)"></span>
+            <span class="dot cursor-pointer circle bg-color-white" onclick="currentTestimonial(2)"></span>
+            <span class="dot cursor-pointer circle bg-color-white" onclick="currentTestimonial(3)"></span>
           </div>
         </div>
 
         <!-- labels -->
-        <h2 class="text-center text-6xl font-kel-bold text-[#F6E48C] uppercase mb-4">Hear my work on these labels</h2>
-        <div class="bg-orange-800 p-4 rounded-xs mb-4">
-          <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            <div class="mx-auto rounded-xs bg-white">
+        <h2 class="text-center text-3xl min-[375px]:text-4xl sm:text-6xl font-kel-bold text-color-yellow uppercase mb-4">Hear my work on these labels</h2>
+        <div class="bg-color-pink p-4 rounded-xs mb-4">
+          <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1">
+            <div class="mx-auto my-2 rounded-full size-70 sm:size-50 2xl:size-80 bg-white">
               <a href="https://devilduckrecords.com/" target="_blank">
                 <img src="img/labels/devilduck.jpg" alt=""
-                  class="w-60 h-60 xl:w-80 xl:h-80 object-contain">
+                  class="size-70 sm:size-50 2xl:size-80 object-contain rounded-full">
               </a>
             </div>
-            <div class="mx-auto rounded-xs bg-white">
+            <div class="mx-auto my-2 rounded-full size-70 sm:size-50 2xl:size-80 bg-white">
               <a href="https://equalvision.com/" target="_blank">
                 <img src="img/labels/Equal_Vision_Records_logo.png" alt=""
-                  class="w-60 h-60 xl:w-80 xl:h-80 object-contain">
+                  class="size-70 sm:size-50 2xl:size-80 object-contain rounded-full">
               </a>
             </div>
-            <div class="mx-auto rounded-xs bg-white">
+            <div class="mx-auto my-2 rounded-full size-70 sm:size-50 2xl:size-80 bg-white">
               <a href="https://counterintuitiverecords.com" target="_blank">
                 <img src="img/labels/counterintuitive.webp" alt=""
-                  class="w-60 h-60 xl:w-80 xl:h-80 object-contain">
+                  class="size-70 sm:size-50 2xl:size-80 object-contain rounded-full">
               </a>
             </div>
-            <div class="mx-auto rounded-xs bg-white">
+            <div class="mx-auto my-2 rounded-full size-70 sm:size-50 2xl:size-80 bg-white">
               <a href="https://killrockstars.com" target="_blank">
                 <img src="img/labels/killrockstars.jpg" alt=""
-                  class="w-60 h-60 xl:w-80 xl:h-80 object-contain">
+                  class="size-70 sm:size-50 2xl:size-80 object-contain rounded-full">
               </a>
             </div>
-            <div class="mx-auto rounded-xs bg-black">
+            <div class="mx-auto my-2 rounded-full size-70 sm:size-50 2xl:size-80 bg-black">
               <a href="https://fluffandgravy.com" target="_blank">
                 <img src="img/labels/fluffngravy.jpg" alt=""
-                  class="w-60 h-60 xl:w-80 xl:h-80 object-contain">
+                  class="size-70 sm:size-50 2xl:size-80 object-contain rounded-full">
               </a>
             </div>
-            <div class="mx-auto rounded-xs bg-black">
+            <div class="mx-auto my-2 rounded-full size-70 sm:size-50 2xl:size-80 bg-black">
               <a href="https://bananastandmedia.bandcamp.com/" target="_blank">
                 <img src="img/labels/bananastand.png" alt=""
-                  class="w-60 h-60 xl:w-80 xl:h-80 object-contain">
+                  class="size-70 sm:size-50 2xl:size-80 object-contain rounded-full">
               </a>
             </div>
-            <div class="mx-auto rounded-xs bg-white">
+            <div class="mx-auto my-2 rounded-full size-70 sm:size-50 2xl:size-80 bg-white">
               <a href="https://nadinerecords.bandcamp.com/" target="_blank">
                 <img src="img/labels/nadine.png" alt=""
-                  class="w-60 h-60 xl:w-80 xl:h-80 object-contain">
+                  class="size-70 sm:size-50 2xl:size-80 object-contain rounded-full">
               </a>
             </div>
-            <div class="mx-auto rounded-xs bg-black">
+            <div class="mx-auto my-2 rounded-full size-70 sm:size-50 2xl:size-80 bg-black">
               <a href="https://lauren-records.com" target="_blank">
                 <img src="img/labels/laurenrecords.jpeg" alt=""
-                  class="w-60 h-60 xl:w-80 xl:h-80 object-contain">
+                  class="size-70 sm:size-50 2xl:size-80 object-contain rounded-full">
               </a>
             </div>
           </div>
         </div>
 
-        <h2 class="text-center text-6xl font-kel-bold text-[#F6E48C] uppercase mb-4">See my work on YouTube</h2>
-        <div class="grid grid-cols-1 xl:grid-cols-2 gap-8 mb-4 w-full bg-green-800 p-4 rounded-xs">
+        <h2 class="text-center text-3xl min-[375px]:text-4xl sm:text-6xl font-kel-bold text-color-yellow uppercase mb-4">See my work on YouTube</h2>
+        <div class="grid grid-cols-1 xl:grid-cols-2 gap-8 mb-4 w-full bg-color-brown p-4 rounded-xs">
           <div class="mx-auto rounded-xs overflow-hidden">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/T2Qw655KTbM?si=pbDZoWBc2QwC9Qlu"
+            <iframe width="284" height="157" class="min-[470px]:hidden" src="https://www.youtube.com/embed/T2Qw655KTbM?si=pbDZoWBc2QwC9Qlu"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+
+            <iframe width="410" height="270" class="hidden min-[470px]:block sm:hidden" src="https://www.youtube.com/embed/T2Qw655KTbM?si=pbDZoWBc2QwC9Qlu"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+
+            <iframe width="560" height="315" class="hidden sm:block" src="https://www.youtube.com/embed/T2Qw655KTbM?si=pbDZoWBc2QwC9Qlu"
               title="YouTube video player" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
@@ -166,7 +180,19 @@
           </div>
 
           <div class="mx-auto rounded-xs overflow-hidden">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/_uNLsplaYUU?si=gzWEbzW7eQifRFkP"
+            <iframe width="284" height="157" class="min-[470px]:hidden" src="https://www.youtube.com/embed/_uNLsplaYUU?si=gzWEbzW7eQifRFkP"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+
+            <iframe width="410" height="270" class="hidden min-[470px]:block sm:hidden" src="https://www.youtube.com/embed/_uNLsplaYUU?si=gzWEbzW7eQifRFkP"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+
+            <iframe width="560" height="315" class="hidden sm:block" src="https://www.youtube.com/embed/_uNLsplaYUU?si=gzWEbzW7eQifRFkP"
               title="YouTube video player" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
@@ -174,7 +200,19 @@
           </div>
 
           <div class="mx-auto rounded-xs overflow-hidden">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/GjRsG1iw9xo?si=e8peOJaFj1Dc2Xa6"
+            <iframe width="284" height="157" class="min-[470px]:hidden" src="https://www.youtube.com/embed/GjRsG1iw9xo?si=e8peOJaFj1Dc2Xa6"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+
+            <iframe width="410" height="270" class="hidden min-[470px]:block sm:hidden" src="https://www.youtube.com/embed/GjRsG1iw9xo?si=e8peOJaFj1Dc2Xa6"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+
+            <iframe width="560" height="315" class="hidden sm:block" src="https://www.youtube.com/embed/GjRsG1iw9xo?si=e8peOJaFj1Dc2Xa6"
               title="YouTube video player" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
@@ -182,7 +220,19 @@
           </div>
 
           <div class="mx-auto rounded-xs overflow-hidden">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/DZmQIk8ysn0?si=2HlcPmhcSzvObhYA"
+            <iframe width="284" height="157" class="min-[470px]:hidden" src="https://www.youtube.com/embed/DZmQIk8ysn0?si=2HlcPmhcSzvObhYA"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+
+            <iframe width="410" height="270" class="hidden min-[470px]:block sm:hidden" src="https://www.youtube.com/embed/DZmQIk8ysn0?si=2HlcPmhcSzvObhYA"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+
+            <iframe width="560" height="315" class="hidden sm:block" src="https://www.youtube.com/embed/DZmQIk8ysn0?si=2HlcPmhcSzvObhYA"
               title="YouTube video player" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
@@ -190,65 +240,120 @@
           </div>
         </div>
 
-        <h2 class="text-center text-6xl font-kel-bold text-[#F6E48C] uppercase mb-4">Collaborations</h2>
+        <h2 class="text-center text-3xl min-[375px]:text-4xl sm:text-6xl font-kel-bold text-color-yellow uppercase mb-4">Collaborations</h2>
         <div
-          class="flex flex-col lg:flex-row justify-between items-center lg:items-start bg-orange-800 p-4 rounded-xs mb-4">
-          <div class="flex flex-col items-center w-2/3">
-            <img src="img/matt_at_console.jpg" alt="Matthew Thomson behind a mixing console with a blonde friend"
-              class="rounded-xs mb-4">
+          class="flex flex-col lg:flex-row justify-between items-center lg:items-start bg-color-blue p-4 rounded-xs mb-4">
 
+          <div class="lg:w-1/3 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-2 gap-8 p-4 mb-4 lg:mb-0 text-sm">
+            <ul class="hidden sm:block lg:hidden">
+              <li>Kassi Valazza</li>
+              <li>Luna Vista</li>
+              <li>Federale</li>
+              <li>The Fourth Wall</li>
+              <li>Out Of This World</li>
+              <li>Spooky Mansions</li>
+              <li>Tabor</li>
+              <li>Maita</li>
+              <li>Tamar Berk</li>
+              <li>Stoner Control</li>
+              <li>Chad Bault</li>
+              <li>Creature Party</li>
+              <li>Abronia</li>
+              <li>Bridal Veil</li>
+              <li>Oh Lonesome Ana</li>
+            </ul>
+            <ul class="hidden sm:block lg:hidden">
+              <li>Joypress</li>
+              <li>Scales</li>
+              <li>The Hague</li>
+              <li>Young Elk</li>
+              <li>Good Grief</li>
+              <li>Trippy Lips</li>
+              <li>Helens</li>
+              <li>Mile Music Kid</li>
+              <li>Matt Mitchell</li>
+              <li>Night Herron</li>
+              <li>Britt Harris</li>
+              <li>Sunflower Fox</li>
+              <li>Hot Stamp</li>
+              <li>Sam Greenp</li>
+              <li>Smile Pile</li>
+            </ul>
+            <ul class="hidden sm:block lg:hidden">
+              <li>Noah Kite</li>
+              <li>Strange Ranger</li>
+              <li>Blowout</li>
+              <li>The Sincerelys</li>
+              <li>Sioux Falls</li>
+              <li>Brigadier</li>
+              <li>Twangshifters</li>
+              <li>Closely Watched Trains</li>
+              <li>Asteroid M</li>
+              <li>Cory Coons</li>
+              <li>Banana Stand Media</li>
+              <li>Pickathon</li>
+              <li>Sam Mendoza</li>
+              <li>Etc.</li>
+            </ul>
+
+            <ul class="sm:hidden lg:block">
+              <li>Kassi Valazza</li>
+              <li>Luna Vista</li>
+              <li>Federale</li>
+              <li>The Fourth Wall</li>
+              <li>Out Of This World</li>
+              <li>Spooky Mansions</li>
+              <li>Tabor</li>
+              <li>Maita</li>
+              <li>Tamar Berk</li>
+              <li>Stoner Control</li>
+              <li>Chad Bault</li>
+              <li>Creature Party</li>
+              <li>Abronia</li>
+              <li>Bridal Veil</li>
+              <li>Oh Lonesome Ana</li>
+              <li>Joypress</li>
+              <li>Scales</li>
+              <li>The Hague</li>
+              <li>Young Elk</li>
+              <li>Good Grief</li>
+              <li>Trippy Lips</li>
+              <li>Helens</li>
+            </ul>
+            <ul class="sm:hidden lg:block">
+              <li>Mile Music Kid</li>
+              <li>Matt Mitchell</li>
+              <li>Night Herron</li>
+              <li>Britt Harris</li>
+              <li>Sunflower Fox</li>
+              <li>Hot Stamp</li>
+              <li>Sam Greenp</li>
+              <li>Smile Pile</li>
+              <li>Noah Kite</li>
+              <li>Strange Ranger</li>
+              <li>Blowout</li>
+              <li>The Sincerelys</li>
+              <li>Sioux Falls</li>
+              <li>Brigadier</li>
+              <li>Twangshifters</li>
+              <li>Closely Watched Trains</li>
+              <li>Asteroid M</li>
+              <li>Cory Coons</li>
+              <li>Banana Stand Media</li>
+              <li>Pickathon</li>
+              <li>Sam Mendoza</li>
+              <li>Etc.</li>
+            </ul>
+          </div>
+
+          <div class="flex flex-col items-center w-9/10 lg:w-2/3">
+            <img src="img/matt_at_console.jpg" alt="Matthew Thomson behind a mixing console with a blonde friend"
+              class="object-cover object-top rounded-xs mb-4 aspect-16/9">
+          
             <button id="contactButton"
-              class="bg-[#F6E48C] hover:ring-4 ring-pink-500 cursor-pointer uppercase w-3/4 text-black font-kel-bold p-4 mb-4 lg:mb-0 lg:mt-4 rounded-xs">Let's
+              class="bg-color-brown hover:text-[#5343A4] cursor-pointer uppercase w-3/4 text-black font-kel-bold p-4 mb-4 lg:mb-0 mt-4 rounded-full">Let's
               make a record!</button>
           </div>
-
-          <div class="lg:w-1/3 grid grid-cols-3 lg:grid-cols-2 gap-4 ml-4 mb-4 text-sm">
-            <p>Kassi Valazza</p>
-            <p>Luna Vista</p>
-            <p>Federale</p>
-            <p>The Fourth Wall</p>
-            <p>Out Of This World</p>
-            <p>Spooky Mansions</p>
-            <p>Tabor</p>
-            <p>Maita</p>
-            <p>Tamar Berk</p>
-            <p>Stoner Control</p>
-            <p>Chad Bault</p>
-            <p>Creature Party</p>
-            <p>Abronia</p>
-            <p>Bridal Veil</p>
-            <p>Oh Lonesome Ana</p>
-            <p>Joypress</p>
-            <p>Scales</p>
-            <p>The Hague</p>
-            <p>Young Elk</p>
-            <p>Good Grief</p>
-            <p>Trippy Lips</p>
-            <p>Helens</p>
-            <p>Mile Music Kid</p>
-            <p>Matt Mitchell</p>
-            <p>Night Herron</p>
-            <p>Britt Harris</p>
-            <p>Sunflower Fox</p>
-            <p>Hot Stamp</p>
-            <p>Sam Greenp</p>
-            <p>Smile Pile</p>
-            <p>Noah Kite</p>
-            <p>Strange Ranger</p>
-            <p>Blowout</p>
-            <p>The Sincerelys</p>
-            <p>Sioux Falls</p>
-            <p>Brigadier</p>
-            <p>Twangshifters</p>
-            <p>Closely Watched Trains</p>
-            <p>Asteroid M</p>
-            <p>Cory Coons</p>
-            <p>Banana Stand Media</p>
-            <p>Pickathon</p>
-            <p>Sam Mendoza</p>
-            <p>Etc.</p>
-          </div>
-
         </div>
       </section>
     </div>

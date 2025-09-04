@@ -11,9 +11,6 @@ function showTestimonials(n) {
     if (n > testimonials.length) {
       testimonialIndex = 1;
     }
-    if (n < 1) {
-      testimonialIndex = slides.length;
-    }
   } else {
     testimonialIndex++;
     if (testimonialIndex > testimonials.length) {
@@ -24,10 +21,10 @@ function showTestimonials(n) {
     testimonials[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" bg-white", "");
+    dots[i].className = dots[i].className.replace(" bg-color-indigo", "");
   }
   testimonials[testimonialIndex - 1].style.display = "flex";
-  dots[testimonialIndex - 1].className += " bg-white";
+  dots[testimonialIndex - 1].className += " bg-color-indigo";
   timeoutID = setTimeout(showTestimonials, 20000);
 }
 
