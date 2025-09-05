@@ -23,15 +23,9 @@ a:hover {
 }
 
 .dot {
-  width: 1rem;
-  height: 1rem;
-  margin: .5rem .125rem;
+  margin: .5rem .375rem;
   display: inline-block;
   transition: background-color 400ms ease;
-}
-
-.circle {
-  border-radius: 50%;
 }
 
 .testslide {
