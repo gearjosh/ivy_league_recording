@@ -2,6 +2,10 @@ a:hover {
   color: #5A76A6;
 }
 
+.bg-color-blue a:hover {
+  color: #7CA65A;
+}
+
 .font-kel-bold {
   font-family: 'kelvinchbold', serif;
 }
